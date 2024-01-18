@@ -6,6 +6,8 @@ function App() {
   const message =
     queryParams.get("msg") == "suc"
       ? "Obrigado por assinar o Dominando Pontos, seja bem vindo!"
+      : queryParams.get("msg") == "cancel"
+      ? "Vimos que você não quer assinar, fique tranquilo, não iremos cobrar do seu cartão! Obrigado"
       : "Algo deu errado, tente novamente mais tarde";
 
   return (
